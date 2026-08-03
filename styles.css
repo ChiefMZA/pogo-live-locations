@@ -253,7 +253,7 @@ kbd { padding: 3px 7px; border: 2px solid var(--ink); border-radius: 6px; backgr
 
 .location-row {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(155px, 0.68fr) minmax(0, 0.9fr) minmax(230px, 0.8fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(155px, 0.68fr) minmax(0, 0.9fr) minmax(270px, 0.9fr);
   align-items: center;
   gap: 22px;
   min-height: 88px;
@@ -297,8 +297,7 @@ kbd { padding: 3px 7px; border: 2px solid var(--ink); border-radius: 6px; backgr
 .flag-fallback { font-size: 22px; }
 
 .place-name,
-.zone-name,
-.coordinates { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.zone-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .place-name { font-size: 14px; font-weight: 900; }
 
 .location-time { display: block; font-size: 16px; font-weight: 900; font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -307,7 +306,7 @@ kbd { padding: 3px 7px; border: 2px solid var(--ink); border-radius: 6px; backgr
 .zone-detail { overflow: hidden; text-overflow: ellipsis; }
 
 .coordinate-cell { display: flex; align-items: center; justify-content: flex-end; gap: 9px; }
-.coordinates { color: #4d4857; font: 700 13.5px ui-monospace, SFMono-Regular, Consolas, monospace; font-variant-numeric: tabular-nums; }
+.coordinates { flex: 0 0 auto; overflow: visible; color: #4d4857; font: 700 13.5px ui-monospace, SFMono-Regular, Consolas, monospace; font-variant-numeric: tabular-nums; text-overflow: clip; white-space: nowrap; }
 
 .copy-button {
   min-height: 36px;
@@ -403,7 +402,7 @@ footer {
 @keyframes pulse { 50% { opacity: 0.38; transform: scale(0.92); } }
 
 @media (max-width: 1020px) {
-  .location-row { grid-template-columns: minmax(0, 1.35fr) minmax(155px, 0.7fr) minmax(225px, 0.9fr); }
+  .location-row { grid-template-columns: minmax(0, 1.35fr) minmax(155px, 0.7fr) minmax(270px, 0.9fr); }
   .zone-cell { display: none; }
 }
 
@@ -432,9 +431,15 @@ footer {
   .group-range { display: none; }
   .location-row { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; min-height: 112px; padding: 14px 12px; }
   .time-cell { text-align: right; }
-  .coordinate-cell { grid-column: 1 / -1; justify-content: space-between; padding-left: 56px; }
+  .coordinate-cell { grid-column: 1 / -1; justify-content: space-between; padding-left: 0; }
   .coordinates { font-size: 13px; }
   footer { flex-direction: column; line-height: 1.6; }
+}
+
+@media (max-width: 360px) {
+  .status-ribbon { flex-wrap: wrap; justify-content: center; white-space: normal; }
+  .status-ribbon i { display: none; }
+  .tabs { flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {
