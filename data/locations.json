@@ -1,0 +1,871 @@
+{
+  "schemaVersion": 1,
+  "hotspots": [
+    {
+      "id": "1.987708,-157.472268",
+      "name": "Kiribati",
+      "latitude": 1.987708,
+      "longitude": -157.472268,
+      "timezone": "Pacific/Kiritimati",
+      "countryCode": "KI"
+    },
+    {
+      "id": "-41.283016,174.766494",
+      "name": "Wellington, NZ",
+      "latitude": -41.283016,
+      "longitude": 174.766494,
+      "timezone": "Pacific/Auckland",
+      "countryCode": "NZ"
+    },
+    {
+      "id": "-36.849930,174.763020",
+      "name": "Auckland, NZ",
+      "latitude": -36.84993,
+      "longitude": 174.76302,
+      "timezone": "Pacific/Auckland",
+      "countryCode": "NZ"
+    },
+    {
+      "id": "-18.147125,178.446441",
+      "name": "Suva, Fiji",
+      "latitude": -18.147125,
+      "longitude": 178.446441,
+      "timezone": "Pacific/Fiji",
+      "countryCode": "FJ"
+    },
+    {
+      "id": "-33.870834,151.211761",
+      "name": "Sydney, Australia",
+      "latitude": -33.870834,
+      "longitude": 151.211761,
+      "timezone": "Australia/Sydney",
+      "countryCode": "AU"
+    },
+    {
+      "id": "-34.922832,138.603317",
+      "name": "Adelaide, Australia",
+      "latitude": -34.922832,
+      "longitude": 138.603317,
+      "timezone": "Australia/Adelaide",
+      "countryCode": "AU"
+    },
+    {
+      "id": "-27.468320,153.023840",
+      "name": "Brisbane, Australia",
+      "latitude": -27.46832,
+      "longitude": 153.02384,
+      "timezone": "Australia/Brisbane",
+      "countryCode": "AU"
+    },
+    {
+      "id": "-12.463752,130.843505",
+      "name": "Darwin City, Australia",
+      "latitude": -12.463752,
+      "longitude": 130.843505,
+      "timezone": "Australia/Darwin",
+      "countryCode": "AU"
+    },
+    {
+      "id": "35.696600,139.814690",
+      "name": "Tokyo, Japan",
+      "latitude": 35.6966,
+      "longitude": 139.81469,
+      "timezone": "Asia/Tokyo",
+      "countryCode": "JP"
+    },
+    {
+      "id": "34.700130,135.497604",
+      "name": "Osaka, Japan",
+      "latitude": 34.70013,
+      "longitude": 135.497604,
+      "timezone": "Asia/Tokyo",
+      "countryCode": "JP"
+    },
+    {
+      "id": "26.217901,127.693794",
+      "name": "Okinawa, Japan",
+      "latitude": 26.217901,
+      "longitude": 127.693794,
+      "timezone": "Asia/Tokyo",
+      "countryCode": "JP"
+    },
+    {
+      "id": "35.008502,135.762649",
+      "name": "Kyoto, Japan",
+      "latitude": 35.008502,
+      "longitude": 135.762649,
+      "timezone": "Asia/Tokyo",
+      "countryCode": "JP"
+    },
+    {
+      "id": "37.559350,126.980560",
+      "name": "Seoul, South Korea",
+      "latitude": 37.55935,
+      "longitude": 126.98056,
+      "timezone": "Asia/Seoul",
+      "countryCode": "KR"
+    },
+    {
+      "id": "25.047772,121.516898",
+      "name": "Taipei, Taiwan",
+      "latitude": 25.047772,
+      "longitude": 121.516898,
+      "timezone": "Asia/Taipei",
+      "countryCode": "TW"
+    },
+    {
+      "id": "1.284880,103.844730",
+      "name": "Singapore",
+      "latitude": 1.28488,
+      "longitude": 103.84473,
+      "timezone": "Asia/Singapore",
+      "countryCode": "SG"
+    },
+    {
+      "id": "-31.959581,115.842826",
+      "name": "Perth, Australia",
+      "latitude": -31.959581,
+      "longitude": 115.842826,
+      "timezone": "Australia/Perth",
+      "countryCode": "AU"
+    },
+    {
+      "id": "14.601026,120.975135",
+      "name": "Manila, Philippines",
+      "latitude": 14.601026,
+      "longitude": 120.975135,
+      "timezone": "Asia/Manila",
+      "countryCode": "PH"
+    },
+    {
+      "id": "3.155749,101.694900",
+      "name": "Kuala Lumpur, Malaysia",
+      "latitude": 3.155749,
+      "longitude": 101.6949,
+      "timezone": "Asia/Kuala_Lumpur",
+      "countryCode": "MY"
+    },
+    {
+      "id": "10.774499,106.693679",
+      "name": "Ho Chi Minh, Vietnam",
+      "latitude": 10.774499,
+      "longitude": 106.693679,
+      "timezone": "Asia/Ho_Chi_Minh",
+      "countryCode": "VN"
+    },
+    {
+      "id": "13.845247,100.569320",
+      "name": "Bangkok, Thailand",
+      "latitude": 13.845247,
+      "longitude": 100.56932,
+      "timezone": "Asia/Bangkok",
+      "countryCode": "TH"
+    },
+    {
+      "id": "-6.224168,106.823074",
+      "name": "Jakarta, Indonesia",
+      "latitude": -6.224168,
+      "longitude": 106.823074,
+      "timezone": "Asia/Jakarta",
+      "countryCode": "ID"
+    },
+    {
+      "id": "22.366130,91.824478",
+      "name": "Chattogram, Bangladesh",
+      "latitude": 22.36613,
+      "longitude": 91.824478,
+      "timezone": "Asia/Dhaka",
+      "countryCode": "BD"
+    },
+    {
+      "id": "23.732200,90.395210",
+      "name": "Dhaka, Bangladesh",
+      "latitude": 23.7322,
+      "longitude": 90.39521,
+      "timezone": "Asia/Dhaka",
+      "countryCode": "BD"
+    },
+    {
+      "id": "18.504455,73.852783",
+      "name": "Pune, India",
+      "latitude": 18.504455,
+      "longitude": 73.852783,
+      "timezone": "Asia/Kolkata",
+      "countryCode": "IN"
+    },
+    {
+      "id": "19.077266,72.881561",
+      "name": "Mumbai, India",
+      "latitude": 19.077266,
+      "longitude": 72.881561,
+      "timezone": "Asia/Kolkata",
+      "countryCode": "IN"
+    },
+    {
+      "id": "22.544900,88.342200",
+      "name": "Kolkata, India",
+      "latitude": 22.5449,
+      "longitude": 88.3422,
+      "timezone": "Asia/Kolkata",
+      "countryCode": "IN"
+    },
+    {
+      "id": "28.591194,77.218765",
+      "name": "New Delhi, India",
+      "latitude": 28.591194,
+      "longitude": 77.218765,
+      "timezone": "Asia/Kolkata",
+      "countryCode": "IN"
+    },
+    {
+      "id": "4.175352,73.509330",
+      "name": "Malé, Maldives",
+      "latitude": 4.175352,
+      "longitude": 73.50933,
+      "timezone": "Indian/Maldives",
+      "countryCode": "MV"
+    },
+    {
+      "id": "31.568758,74.305688",
+      "name": "Lahore, Pakistan",
+      "latitude": 31.568758,
+      "longitude": 74.305688,
+      "timezone": "Asia/Karachi",
+      "countryCode": "PK"
+    },
+    {
+      "id": "25.076055,55.131673",
+      "name": "Dubai, UAE",
+      "latitude": 25.076055,
+      "longitude": 55.131673,
+      "timezone": "Asia/Dubai",
+      "countryCode": "AE"
+    },
+    {
+      "id": "-1.275971,36.817481",
+      "name": "Nairobi, Kenya",
+      "latitude": -1.275971,
+      "longitude": 36.817481,
+      "timezone": "Africa/Nairobi",
+      "countryCode": "KE"
+    },
+    {
+      "id": "41.077022,28.948717",
+      "name": "Istanbul, Turkey",
+      "latitude": 41.077022,
+      "longitude": 28.948717,
+      "timezone": "Europe/Istanbul",
+      "countryCode": "TR"
+    },
+    {
+      "id": "39.641190,22.412780",
+      "name": "Larissa, Greece",
+      "latitude": 39.64119,
+      "longitude": 22.41278,
+      "timezone": "Europe/Athens",
+      "countryCode": "GR"
+    },
+    {
+      "id": "40.632747,22.954257",
+      "name": "Thessaloniki, Greece",
+      "latitude": 40.632747,
+      "longitude": 22.954257,
+      "timezone": "Europe/Athens",
+      "countryCode": "GR"
+    },
+    {
+      "id": "30.042758,31.200077",
+      "name": "Cairo, Egypt",
+      "latitude": 30.042758,
+      "longitude": 31.200077,
+      "timezone": "Africa/Cairo",
+      "countryCode": "EG"
+    },
+    {
+      "id": "53.543201,-113.489692",
+      "name": "Edmonton, Canada",
+      "latitude": 53.543201,
+      "longitude": -113.489692,
+      "timezone": "America/Edmonton",
+      "countryCode": "CA"
+    },
+    {
+      "id": "-33.918781,18.426647",
+      "name": "Cape Town, South Africa",
+      "latitude": -33.918781,
+      "longitude": 18.426647,
+      "timezone": "Africa/Johannesburg",
+      "countryCode": "ZA"
+    },
+    {
+      "id": "48.863021,2.334101",
+      "name": "Paris, France",
+      "latitude": 48.863021,
+      "longitude": 2.334101,
+      "timezone": "Europe/Paris",
+      "countryCode": "FR"
+    },
+    {
+      "id": "41.661924,-0.901100",
+      "name": "Zaragoza, Spain",
+      "latitude": 41.661924,
+      "longitude": -0.9011,
+      "timezone": "Europe/Madrid",
+      "countryCode": "ES"
+    },
+    {
+      "id": "40.417549,-3.682479",
+      "name": "Madrid, Spain",
+      "latitude": 40.417549,
+      "longitude": -3.682479,
+      "timezone": "Europe/Madrid",
+      "countryCode": "ES"
+    },
+    {
+      "id": "41.379997,2.174263",
+      "name": "Barcelona, Spain",
+      "latitude": 41.379997,
+      "longitude": 2.174263,
+      "timezone": "Europe/Madrid",
+      "countryCode": "ES"
+    },
+    {
+      "id": "41.893348,12.483730",
+      "name": "Rome, Italy",
+      "latitude": 41.893348,
+      "longitude": 12.48373,
+      "timezone": "Europe/Rome",
+      "countryCode": "IT"
+    },
+    {
+      "id": "51.511692,-0.123864",
+      "name": "London, England, UK",
+      "latitude": 51.511692,
+      "longitude": -0.123864,
+      "timezone": "Europe/London",
+      "countryCode": "GB"
+    },
+    {
+      "id": "64.140495,-21.949008",
+      "name": "Reykjavík, Iceland",
+      "latitude": 64.140495,
+      "longitude": -21.949008,
+      "timezone": "Atlantic/Reykjavik",
+      "countryCode": "IS"
+    },
+    {
+      "id": "14.917956,-23.509067",
+      "name": "Praia, Cabo Verde",
+      "latitude": 14.917956,
+      "longitude": -23.509067,
+      "timezone": "Atlantic/Cape_Verde",
+      "countryCode": "CV"
+    },
+    {
+      "id": "-3.845939,-32.411685",
+      "name": "Fernando de Noronha, Brazil",
+      "latitude": -3.845939,
+      "longitude": -32.411685,
+      "timezone": "America/Noronha",
+      "countryCode": "BR"
+    },
+    {
+      "id": "-23.587596,-46.655761",
+      "name": "São Paulo, Brazil",
+      "latitude": -23.587596,
+      "longitude": -46.655761,
+      "timezone": "America/Sao_Paulo",
+      "countryCode": "BR"
+    },
+    {
+      "id": "-22.924720,-43.233100",
+      "name": "Rio de Janeiro, Brazil",
+      "latitude": -22.92472,
+      "longitude": -43.2331,
+      "timezone": "America/Sao_Paulo",
+      "countryCode": "BR"
+    },
+    {
+      "id": "47.572616,-52.690032",
+      "name": "St. John's, Canada",
+      "latitude": 47.572616,
+      "longitude": -52.690032,
+      "timezone": "America/St_Johns",
+      "countryCode": "CA"
+    },
+    {
+      "id": "44.643192,-63.575477",
+      "name": "Halifax, Canada",
+      "latitude": 44.643192,
+      "longitude": -63.575477,
+      "timezone": "America/Halifax",
+      "countryCode": "CA"
+    },
+    {
+      "id": "46.817008,-71.213462",
+      "name": "Quebec, Canada",
+      "latitude": 46.817008,
+      "longitude": -71.213462,
+      "timezone": "America/Toronto",
+      "countryCode": "CA"
+    },
+    {
+      "id": "40.773895,-73.971130",
+      "name": "Central Park, NYC, USA",
+      "latitude": 40.773895,
+      "longitude": -73.97113,
+      "timezone": "America/New_York",
+      "countryCode": "US"
+    },
+    {
+      "id": "40.754007,-73.984113",
+      "name": "Bryant Park, NYC, USA",
+      "latitude": 40.754007,
+      "longitude": -73.984113,
+      "timezone": "America/New_York",
+      "countryCode": "US"
+    },
+    {
+      "id": "27.943004,-82.452636",
+      "name": "Tampa, FL, USA",
+      "latitude": 27.943004,
+      "longitude": -82.452636,
+      "timezone": "America/New_York",
+      "countryCode": "US"
+    },
+    {
+      "id": "39.947040,-75.152397",
+      "name": "Philadelphia, PA, USA",
+      "latitude": 39.94704,
+      "longitude": -75.152397,
+      "timezone": "America/New_York",
+      "countryCode": "US"
+    },
+    {
+      "id": "41.885696,-87.622093",
+      "name": "Chicago, IL, USA",
+      "latitude": 41.885696,
+      "longitude": -87.622093,
+      "timezone": "America/Chicago",
+      "countryCode": "US"
+    },
+    {
+      "id": "29.956180,-90.066131",
+      "name": "New Orleans, LA, USA",
+      "latitude": 29.95618,
+      "longitude": -90.066131,
+      "timezone": "America/Chicago",
+      "countryCode": "US"
+    },
+    {
+      "id": "19.435171,-99.145965",
+      "name": "Mexico City, Mexico",
+      "latitude": 19.435171,
+      "longitude": -99.145965,
+      "timezone": "America/Mexico_City",
+      "countryCode": "MX"
+    },
+    {
+      "id": "39.748146,-104.995681",
+      "name": "Denver, CO, USA",
+      "latitude": 39.748146,
+      "longitude": -104.995681,
+      "timezone": "America/Denver",
+      "countryCode": "US"
+    },
+    {
+      "id": "37.786411,-122.405403",
+      "name": "San Francisco, CA, USA",
+      "latitude": 37.786411,
+      "longitude": -122.405403,
+      "timezone": "America/Los_Angeles",
+      "countryCode": "US"
+    },
+    {
+      "id": "37.808410,-122.409423",
+      "name": "Pier 39, CA, USA",
+      "latitude": 37.80841,
+      "longitude": -122.409423,
+      "timezone": "America/Los_Angeles",
+      "countryCode": "US"
+    },
+    {
+      "id": "33.812089,-117.919011",
+      "name": "Disneyland, CA, USA",
+      "latitude": 33.812089,
+      "longitude": -117.919011,
+      "timezone": "America/Los_Angeles",
+      "countryCode": "US"
+    },
+    {
+      "id": "34.009050,-118.497602",
+      "name": "Santa Monica, CA, USA",
+      "latitude": 34.00905,
+      "longitude": -118.497602,
+      "timezone": "America/Los_Angeles",
+      "countryCode": "US"
+    },
+    {
+      "id": "45.518718,-122.679420",
+      "name": "Portland, OR, USA",
+      "latitude": 45.518718,
+      "longitude": -122.67942,
+      "timezone": "America/Los_Angeles",
+      "countryCode": "US"
+    },
+    {
+      "id": "61.217254,-149.893066",
+      "name": "Anchorage, AK, USA",
+      "latitude": 61.217254,
+      "longitude": -149.893066,
+      "timezone": "America/Anchorage",
+      "countryCode": "US"
+    },
+    {
+      "id": "58.301731,-134.412506",
+      "name": "Juneau, AK, USA",
+      "latitude": 58.301731,
+      "longitude": -134.412506,
+      "timezone": "America/Juneau",
+      "countryCode": "US"
+    },
+    {
+      "id": "21.306690,-157.858930",
+      "name": "Honolulu, HI, USA",
+      "latitude": 21.30669,
+      "longitude": -157.85893,
+      "timezone": "Pacific/Honolulu",
+      "countryCode": "US"
+    },
+    {
+      "id": "-14.278107,-170.687881",
+      "name": "Pago Pago, American Samoa",
+      "latitude": -14.278107,
+      "longitude": -170.687881,
+      "timezone": "Pacific/Pago_Pago",
+      "countryCode": "AS"
+    },
+    {
+      "id": "0.807210,-176.617691",
+      "name": "Howland Island",
+      "latitude": 0.80721,
+      "longitude": -176.617691,
+      "timezone": "Etc/GMT+12",
+      "countryCode": "UM"
+    }
+  ],
+  "timezones": [
+    {
+      "id": "1.986525,-157.476884",
+      "name": "London, Kiritimati, Kiribati",
+      "latitude": 1.986525,
+      "longitude": -157.476884,
+      "timezone": "Pacific/Kiritimati",
+      "countryCode": "KI"
+    },
+    {
+      "id": "-13.832748,-171.754650",
+      "name": "Apia, Samoa",
+      "latitude": -13.832748,
+      "longitude": -171.75465,
+      "timezone": "Pacific/Apia",
+      "countryCode": "WS"
+    },
+    {
+      "id": "-43.731817,-176.268059",
+      "name": "Waitangi, Chatham Islands, New Zealand",
+      "latitude": -43.731817,
+      "longitude": -176.268059,
+      "timezone": "Pacific/Chatham",
+      "countryCode": "NZ"
+    },
+    {
+      "id": "-36.844430,174.768706",
+      "name": "Auckland, New Zealand",
+      "latitude": -36.84443,
+      "longitude": 174.768706,
+      "timezone": "Pacific/Auckland",
+      "countryCode": "NZ"
+    },
+    {
+      "id": "-22.266667,166.450000",
+      "name": "Nouméa, New Caledonia",
+      "latitude": -22.266667,
+      "longitude": 166.45,
+      "timezone": "Pacific/Noumea",
+      "countryCode": "NC"
+    },
+    {
+      "id": "-31.527410,159.067440",
+      "name": "Lord Howe Island, Australia",
+      "latitude": -31.52741,
+      "longitude": 159.06744,
+      "timezone": "Australia/Lord_Howe",
+      "countryCode": "AU"
+    },
+    {
+      "id": "-33.873838,151.206401",
+      "name": "Sydney, Australia",
+      "latitude": -33.873838,
+      "longitude": 151.206401,
+      "timezone": "Australia/Sydney",
+      "countryCode": "AU"
+    },
+    {
+      "id": "-34.927128,138.599852",
+      "name": "Adelaide, Australia",
+      "latitude": -34.927128,
+      "longitude": 138.599852,
+      "timezone": "Australia/Adelaide",
+      "countryCode": "AU"
+    },
+    {
+      "id": "35.729548,139.719100",
+      "name": "Tokyo, Japan",
+      "latitude": 35.729548,
+      "longitude": 139.7191,
+      "timezone": "Asia/Tokyo",
+      "countryCode": "JP"
+    },
+    {
+      "id": "-31.675207,128.889177",
+      "name": "Eucla, Australia",
+      "latitude": -31.675207,
+      "longitude": 128.889177,
+      "timezone": "Australia/Eucla",
+      "countryCode": "AU"
+    },
+    {
+      "id": "1.282829,103.864647",
+      "name": "Singapore, Singapore",
+      "latitude": 1.282829,
+      "longitude": 103.864647,
+      "timezone": "Asia/Singapore",
+      "countryCode": "SG"
+    },
+    {
+      "id": "21.028382,105.853734",
+      "name": "Hanoi, Vietnam",
+      "latitude": 21.028382,
+      "longitude": 105.853734,
+      "timezone": "Asia/Ho_Chi_Minh",
+      "countryCode": "VN"
+    },
+    {
+      "id": "16.777900,96.148178",
+      "name": "Yangon, Myanmar",
+      "latitude": 16.7779,
+      "longitude": 96.148178,
+      "timezone": "Asia/Yangon",
+      "countryCode": "MM"
+    },
+    {
+      "id": "23.727845,90.407758",
+      "name": "Dhaka, Bangladesh",
+      "latitude": 23.727845,
+      "longitude": 90.407758,
+      "timezone": "Asia/Dhaka",
+      "countryCode": "BD"
+    },
+    {
+      "id": "27.702314,85.317119",
+      "name": "Kathmandu, Nepal",
+      "latitude": 27.702314,
+      "longitude": 85.317119,
+      "timezone": "Asia/Kathmandu",
+      "countryCode": "NP"
+    },
+    {
+      "id": "28.613528,77.229262",
+      "name": "New Delhi, India",
+      "latitude": 28.613528,
+      "longitude": 77.229262,
+      "timezone": "Asia/Kolkata",
+      "countryCode": "IN"
+    },
+    {
+      "id": "31.568758,74.305688",
+      "name": "Lahore, Pakistan",
+      "latitude": 31.568758,
+      "longitude": 74.305688,
+      "timezone": "Asia/Karachi",
+      "countryCode": "PK"
+    },
+    {
+      "id": "34.528130,69.172330",
+      "name": "Kabul, Afghanistan",
+      "latitude": 34.52813,
+      "longitude": 69.17233,
+      "timezone": "Asia/Kabul",
+      "countryCode": "AF"
+    },
+    {
+      "id": "25.214465,55.276649",
+      "name": "Dubai, United Arab Emirates",
+      "latitude": 25.214465,
+      "longitude": 55.276649,
+      "timezone": "Asia/Dubai",
+      "countryCode": "AE"
+    },
+    {
+      "id": "35.668209,51.374414",
+      "name": "Tehran, Iran",
+      "latitude": 35.668209,
+      "longitude": 51.374414,
+      "timezone": "Asia/Tehran",
+      "countryCode": "IR"
+    },
+    {
+      "id": "41.013096,28.975726",
+      "name": "Istanbul, Turkey",
+      "latitude": 41.013096,
+      "longitude": 28.975726,
+      "timezone": "Europe/Istanbul",
+      "countryCode": "TR"
+    },
+    {
+      "id": "48.863675,2.326695",
+      "name": "Paris, France",
+      "latitude": 48.863675,
+      "longitude": 2.326695,
+      "timezone": "Europe/Paris",
+      "countryCode": "FR"
+    },
+    {
+      "id": "51.513302,-0.125298",
+      "name": "London, United Kingdom",
+      "latitude": 51.513302,
+      "longitude": -0.125298,
+      "timezone": "Europe/London",
+      "countryCode": "GB"
+    },
+    {
+      "id": "37.739333,-25.677710",
+      "name": "Ponta Delgada, Azores, Portugal",
+      "latitude": 37.739333,
+      "longitude": -25.67771,
+      "timezone": "Atlantic/Azores",
+      "countryCode": "PT"
+    },
+    {
+      "id": "14.920278,-23.509491",
+      "name": "Praia, Cabo Verde",
+      "latitude": 14.920278,
+      "longitude": -23.509491,
+      "timezone": "Atlantic/Cape_Verde",
+      "countryCode": "CV"
+    },
+    {
+      "id": "-54.283222,-36.496282",
+      "name": "King Edward Point, South Georgia and the South Sandwich Islands",
+      "latitude": -54.283222,
+      "longitude": -36.496282,
+      "timezone": "Atlantic/South_Georgia",
+      "countryCode": "GS"
+    },
+    {
+      "id": "47.561453,-52.711850",
+      "name": "St. John's, Canada",
+      "latitude": 47.561453,
+      "longitude": -52.71185,
+      "timezone": "America/St_Johns",
+      "countryCode": "CA"
+    },
+    {
+      "id": "-23.586686,-46.655856",
+      "name": "São Paulo, Brazil",
+      "latitude": -23.586686,
+      "longitude": -46.655856,
+      "timezone": "America/Sao_Paulo",
+      "countryCode": "BR"
+    },
+    {
+      "id": "40.754214,-73.984487",
+      "name": "New York City, United States",
+      "latitude": 40.754214,
+      "longitude": -73.984487,
+      "timezone": "America/New_York",
+      "countryCode": "US"
+    },
+    {
+      "id": "41.920204,-87.634251",
+      "name": "Chicago, United States",
+      "latitude": 41.920204,
+      "longitude": -87.634251,
+      "timezone": "America/Chicago",
+      "countryCode": "US"
+    },
+    {
+      "id": "39.739212,-104.990303",
+      "name": "Denver, United States",
+      "latitude": 39.739212,
+      "longitude": -104.990303,
+      "timezone": "America/Denver",
+      "countryCode": "US"
+    },
+    {
+      "id": "37.809578,-122.410403",
+      "name": "San Francisco, United States",
+      "latitude": 37.809578,
+      "longitude": -122.410403,
+      "timezone": "America/Los_Angeles",
+      "countryCode": "US"
+    },
+    {
+      "id": "61.216591,-149.895516",
+      "name": "Anchorage, United States",
+      "latitude": 61.216591,
+      "longitude": -149.895516,
+      "timezone": "America/Anchorage",
+      "countryCode": "US"
+    },
+    {
+      "id": "51.868564,-176.639276",
+      "name": "Adak, United States",
+      "latitude": 51.868564,
+      "longitude": -176.639276,
+      "timezone": "America/Adak",
+      "countryCode": "US"
+    },
+    {
+      "id": "-8.911940,-140.098337",
+      "name": "Taiohae, Marquesas Islands, French Polynesia",
+      "latitude": -8.91194,
+      "longitude": -140.098337,
+      "timezone": "Pacific/Marquesas",
+      "countryCode": "PF"
+    },
+    {
+      "id": "21.270712,-157.819015",
+      "name": "Honolulu, United States",
+      "latitude": 21.270712,
+      "longitude": -157.819015,
+      "timezone": "Pacific/Honolulu",
+      "countryCode": "US"
+    },
+    {
+      "id": "-14.278465,-170.688897",
+      "name": "Pago Pago, American Samoa",
+      "latitude": -14.278465,
+      "longitude": -170.688897,
+      "timezone": "Pacific/Pago_Pago",
+      "countryCode": "AS"
+    },
+    {
+      "id": "0.807000,-176.617500",
+      "name": "Howland Island, U.S. Minor Outlying Islands",
+      "latitude": 0.807,
+      "longitude": -176.6175,
+      "timezone": "Etc/GMT+12",
+      "countryCode": "UM"
+    },
+    {
+      "id": "52.305067,-55.835636",
+      "name": "Mary's Harbour, Canada",
+      "latitude": 52.305067,
+      "longitude": -55.835636,
+      "timezone": "America/St_Johns",
+      "countryCode": "CA"
+    }
+  ]
+}

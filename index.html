@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1324">
+  <meta name="description" content="Live local times, DST-aware timezone groups, and public Pokémon GO coordinates.">
+  <title>POGO Live Locations</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="POGO Live Locations home">
+      <span class="brand-mark" aria-hidden="true">⌖</span>
+      <span>
+        <strong>POGO</strong>
+        <small>LIVE LOCATIONS</small>
+      </span>
+    </a>
+    <div class="utc-clock" aria-label="Current Coordinated Universal Time">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span>UTC</span>
+      <time id="utc-clock">--:--:--</time>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">WORLD CLOCK + COORDINATES</p>
+      <h1 id="page-title">Every location,<br><span>right on time.</span></h1>
+      <p class="hero-copy">Live local clocks grouped by their current UTC offset. Daylight saving changes are handled automatically by each location’s IANA timezone.</p>
+    </section>
+
+    <section class="location-browser" aria-labelledby="browser-title">
+      <h2 id="browser-title" class="visually-hidden">Location browser</h2>
+      <div class="browser-toolbar">
+        <div class="tabs" role="tablist" aria-label="Location lists">
+          <button id="tab-hotspots" class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="location-groups" data-tab="hotspots">
+            <span aria-hidden="true">🔥</span>
+            Hotspots
+            <span class="tab-count" data-count="hotspots">0</span>
+          </button>
+          <button id="tab-timezones" class="tab" type="button" role="tab" aria-selected="false" aria-controls="location-groups" data-tab="timezones">
+            <span aria-hidden="true">🌍</span>
+            Timezones
+            <span class="tab-count" data-count="timezones">0</span>
+          </button>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search locations</span>
+          <input id="location-search" type="search" placeholder="Search a city, country, or timezone" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+      </div>
+
+      <div class="list-meta">
+        <p id="list-summary">Loading live locations…</p>
+        <p><span class="auto-dot" aria-hidden="true"></span> DST-aware grouping</p>
+      </div>
+
+      <div id="location-groups" class="location-groups" role="tabpanel" aria-labelledby="tab-hotspots" aria-live="polite">
+        <div class="loading-state">
+          <span class="loading-pin" aria-hidden="true">⌖</span>
+          <p>Loading location times…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Times refresh live in your browser. Coordinates are read-only and shared from the POGO Account Switcher.</p>
+    <p>Built for trainers worldwide <span aria-hidden="true">🌍</span></p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">JavaScript is required to display live local times.</p></noscript>
+</body>
+</html>
