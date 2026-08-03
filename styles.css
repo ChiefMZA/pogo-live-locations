@@ -415,11 +415,15 @@ footer {
 
 @media (max-width: 650px) {
   .site-header, main, footer { width: min(100% - 20px, 1220px); }
-  .site-header { min-height: 76px; }
-  .brand small { display: none; }
+  .site-header { min-height: 76px; gap: 10px; }
+  .brand { gap: 9px; }
+  .brand small { display: block; font-size: 7px; letter-spacing: 0.14em; }
   .brand-mark { width: 40px; height: 40px; }
-  .local-clock { min-width: 154px; padding: 7px 9px; }
-  .clock-label, .local-clock .live-dot, .clock-stack small { display: none; }
+  .local-clock { min-width: 130px; display: block; padding: 6px 8px; text-align: center; }
+  .clock-label { display: block; font-size: 8px; }
+  .local-clock .live-dot, .clock-stack small { display: none; }
+  .clock-stack { margin-left: 0; text-align: center; }
+  .clock-stack time { font-size: 14px; }
   .status-ribbon { justify-content: space-between; gap: 7px; margin-top: 5px; padding: 11px 12px; box-shadow: 4px 4px 0 var(--ink); font-size: 8.5px; }
   .browser-toolbar { padding: 11px; box-shadow: 4px 4px 0 var(--ink); }
   .tab { min-height: 53px; padding: 0 10px; font-size: 14px; }
