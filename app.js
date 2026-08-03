@@ -82,6 +82,24 @@ function offsetLabel(minutes) {
   return `UTC${sign}${String(Math.floor(absolute / 60)).padStart(2, "0")}:${String(absolute % 60).padStart(2, "0")}`;
 }
 
+function isValidLocation(location) {
+  if (!location || typeof location !== "object") return false;
+  if (typeof location.id !== "string" || location.id.length > 80) return false;
+  if (typeof location.name !== "string" || !location.name.trim() || location.name.length > 200) return false;
+  if (typeof location.timezone !== "string" || location.timezone.length > 100) return false;
+  if (!/^[A-Z]{2}$/.test(location.countryCode || "")) return false;
+  const latitude = Number(location.latitude);
+  const longitude = Number(location.longitude);
+  if (!Number.isFinite(latitude) || latitude < -90 || latitude > 90) return false;
+  if (!Number.isFinite(longitude) || longitude < -180 || longitude > 180) return false;
+  try {
+    new Intl.DateTimeFormat("en", { timeZone: location.timezone }).format();
+  } catch {
+    return false;
+  }
+  return true;
+}
+
 function visibleLocations() {
   const query = state.query.trim().toLocaleLowerCase();
   if (!query) return state.data[state.activeTab];
@@ -254,7 +272,10 @@ async function loadData() {
     const response = await fetch("./data/locations.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    if (!Array.isArray(data.hotspots) || !Array.isArray(data.timezones)) {
+    if (
+      !Array.isArray(data.hotspots) || !Array.isArray(data.timezones) ||
+      !data.hotspots.every(isValidLocation) || !data.timezones.every(isValidLocation)
+    ) {
       throw new Error("Invalid location data");
     }
     state.data = data;

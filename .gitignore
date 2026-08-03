@@ -1,2 +1,14 @@
 .DS_Store
 Thumbs.db
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.log
+accounts*.txt
+config.json
+credentials*
+secrets*
+state.json
