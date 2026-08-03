@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1324">
+  <meta name="theme-color" content="#ff78bd">
   <meta name="description" content="Live local times, DST-aware timezone groups, and public Pokémon GO coordinates.">
   <title>POGO Live Locations</title>
   <link rel="stylesheet" href="./styles.css">
@@ -18,18 +18,25 @@
         <small>LIVE LOCATIONS</small>
       </span>
     </a>
-    <div class="utc-clock" aria-label="Current Coordinated Universal Time">
+    <div class="local-clock" aria-label="Your current local time">
       <span class="live-dot" aria-hidden="true"></span>
-      <span>UTC</span>
-      <time id="utc-clock">--:--:--</time>
+      <span class="clock-label">LOCAL</span>
+      <span class="clock-stack">
+        <time id="local-clock">--:--:--</time>
+        <small id="local-zone">Your timezone</small>
+      </span>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="page-title">
-      <p class="eyebrow">WORLD CLOCK + COORDINATES</p>
-      <h1 id="page-title">Every location,<br><span>right on time.</span></h1>
-      <p class="hero-copy">Live local clocks grouped by their current UTC offset. Daylight saving changes are handled automatically by each location’s IANA timezone.</p>
+    <section class="status-ribbon" aria-label="Site features">
+      <span>LIVE WORLD CLOCKS</span>
+      <i aria-hidden="true">✦</i>
+      <span>AUTO DST</span>
+      <i aria-hidden="true">✦</i>
+      <span>ONE-TAP COORDINATES</span>
+      <i aria-hidden="true">✦</i>
+      <span>TRAINER READY</span>
     </section>
 
     <section class="location-browser" aria-labelledby="browser-title">
@@ -48,7 +55,7 @@
           </button>
         </div>
         <label class="search-box">
-          <span aria-hidden="true">⌕</span>
+          <span aria-hidden="true">🔎</span>
           <span class="visually-hidden">Search locations</span>
           <input id="location-search" type="search" placeholder="Search a city, country, or timezone" autocomplete="off">
           <kbd>/</kbd>

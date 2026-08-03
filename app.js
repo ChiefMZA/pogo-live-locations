@@ -12,7 +12,8 @@ const elements = {
   search: document.querySelector("#location-search"),
   summary: document.querySelector("#list-summary"),
   toast: document.querySelector("#toast"),
-  utcClock: document.querySelector("#utc-clock"),
+  localClock: document.querySelector("#local-clock"),
+  localZone: document.querySelector("#local-zone"),
   tabs: [...document.querySelectorAll("[data-tab]")],
 };
 
@@ -28,11 +29,12 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function flagEmoji(countryCode) {
-  if (!/^[A-Z]{2}$/.test(countryCode || "")) return "🌐";
-  return [...countryCode].map((letter) =>
-    String.fromCodePoint(127397 + letter.charCodeAt(0))
-  ).join("");
+function flagMarkup(countryCode, locationName) {
+  if (!/^[A-Z]{2}$/.test(countryCode || "")) {
+    return '<span class="flag-fallback" aria-hidden="true">🌐</span>';
+  }
+  const code = countryCode.toLowerCase();
+  return `<img class="flag-image" src="https://flagcdn.com/w80/${code}.png" srcset="https://flagcdn.com/w160/${code}.png 2x" alt="" loading="lazy" decoding="async"><span class="visually-hidden">Flag for ${escapeHtml(locationName)}</span>`;
 }
 
 function formatter(timeZone, kind) {
@@ -115,7 +117,7 @@ function rowTemplate(location) {
   return `
     <article class="location-row" data-timezone="${timezone}">
       <div class="place">
-        <span class="flag" aria-hidden="true">${flagEmoji(location.countryCode)}</span>
+        <span class="flag">${flagMarkup(location.countryCode, location.name)}</span>
         <div>
           <div class="place-name" title="${name}">${name}</div>
           <div class="place-sub">${state.activeTab === "hotspots" ? "Popular play location" : "Timezone rotation location"}</div>
@@ -173,9 +175,7 @@ function render() {
 }
 
 function updateClocks(now = new Date(), allowRegroup = true) {
-  elements.utcClock.textContent = now.toLocaleTimeString(undefined, {
-    timeZone: "UTC",
-    hour12: false,
+  elements.localClock.textContent = now.toLocaleTimeString(undefined, {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
@@ -277,5 +277,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 updateClocks();
+elements.localZone.textContent = Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll("_", " ");
 setInterval(() => updateClocks(), 1000);
 loadData();
