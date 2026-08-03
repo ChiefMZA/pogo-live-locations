@@ -123,7 +123,6 @@ function rowTemplate(location) {
         <span class="flag">${flagMarkup(location.countryCode, location.name)}</span>
         <div>
           <div class="place-name" title="${name}">${name}</div>
-          ${state.activeTab === "timezones" ? '<div class="place-sub">Timezone rotation location</div>' : ""}
         </div>
       </div>
       <div class="time-cell">

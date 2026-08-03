@@ -757,7 +757,7 @@
     },
     {
       "id": "-54.283222,-36.496282",
-      "name": "King Edward Point, South Georgia and the South Sandwich Islands",
+      "name": "King Edward Point, South Georgia and Sandwich Islands",
       "latitude": -54.283222,
       "longitude": -36.496282,
       "timezone": "Atlantic/South_Georgia",
@@ -858,14 +858,6 @@
       "longitude": -176.6175,
       "timezone": "Etc/GMT+12",
       "countryCode": "UM"
-    },
-    {
-      "id": "52.305067,-55.835636",
-      "name": "Mary's Harbour, Canada",
-      "latitude": 52.305067,
-      "longitude": -55.835636,
-      "timezone": "America/St_Johns",
-      "countryCode": "CA"
     }
   ]
 }

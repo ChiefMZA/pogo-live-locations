@@ -124,7 +124,6 @@ footer {
 }
 
 .status-ribbon i { color: var(--lime); font-size: 17px; font-style: normal; }
-.status-ribbon b { font-size: 15px; }
 
 .location-browser { margin-bottom: 58px; }
 
@@ -301,7 +300,6 @@ kbd { padding: 3px 7px; border: 2px solid var(--ink); border-radius: 6px; backgr
 .zone-name,
 .coordinates { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .place-name { font-size: 14px; font-weight: 900; }
-.place-sub { margin-top: 5px; overflow: hidden; color: var(--muted); font-size: 9px; font-family: Inter, system-ui, sans-serif; text-overflow: ellipsis; white-space: nowrap; }
 
 .location-time { display: block; font-size: 16px; font-weight: 900; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .location-date, .zone-detail { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; font-family: Inter, system-ui, sans-serif; white-space: nowrap; }
