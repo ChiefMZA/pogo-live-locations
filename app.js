@@ -18,6 +18,7 @@ const elements = {
 };
 
 const formatterCache = new Map();
+const copyTimers = new WeakMap();
 let toastTimer;
 
 function escapeHtml(value) {
@@ -106,7 +107,9 @@ function groupedLocations(date) {
     .sort(([first], [second]) => second - first)
     .map(([offset, locations]) => [
       offset,
-      locations.sort((a, b) => a.name.localeCompare(b.name)),
+      locations.sort((a, b) =>
+        a.timezone.localeCompare(b.timezone) || a.name.localeCompare(b.name)
+      ),
     ]);
 }
 
@@ -120,7 +123,7 @@ function rowTemplate(location) {
         <span class="flag">${flagMarkup(location.countryCode, location.name)}</span>
         <div>
           <div class="place-name" title="${name}">${name}</div>
-          <div class="place-sub">${state.activeTab === "hotspots" ? "Popular play location" : "Timezone rotation location"}</div>
+          ${state.activeTab === "timezones" ? '<div class="place-sub">Timezone rotation location</div>' : ""}
         </div>
       </div>
       <div class="time-cell">
@@ -221,7 +224,7 @@ function showToast(message) {
   toastTimer = setTimeout(() => elements.toast.classList.remove("is-visible"), 1800);
 }
 
-async function copyCoordinates(value) {
+async function copyCoordinates(value, button) {
   try {
     await navigator.clipboard.writeText(value);
   } catch {
@@ -234,6 +237,16 @@ async function copyCoordinates(value) {
     document.execCommand("copy");
     text.remove();
   }
+  clearTimeout(copyTimers.get(button));
+  button.textContent = "COPIED";
+  button.classList.add("is-copied");
+  button.disabled = true;
+  copyTimers.set(button, setTimeout(() => {
+    button.textContent = "COPY";
+    button.classList.remove("is-copied");
+    button.disabled = false;
+    copyTimers.delete(button);
+  }, 1800));
   showToast(`Copied ${value}`);
 }
 
@@ -267,7 +280,7 @@ elements.search.addEventListener("input", (event) => {
 });
 elements.groups.addEventListener("click", (event) => {
   const button = event.target.closest("[data-copy]");
-  if (button) copyCoordinates(button.dataset.copy);
+  if (button) copyCoordinates(button.dataset.copy, button);
 });
 document.addEventListener("keydown", (event) => {
   if (event.key === "/" && document.activeElement !== elements.search) {

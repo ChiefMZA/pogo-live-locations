@@ -124,6 +124,7 @@ footer {
 }
 
 .status-ribbon i { color: var(--lime); font-size: 17px; font-style: normal; }
+.status-ribbon b { font-size: 15px; }
 
 .location-browser { margin-bottom: 58px; }
 
@@ -325,6 +326,15 @@ kbd { padding: 3px 7px; border: 2px solid var(--ink); border-radius: 6px; backgr
 
 .copy-button:hover { transform: translateY(-2px); box-shadow: 3px 3px 0 var(--ink); }
 .copy-button:active { transform: translateY(1px); box-shadow: none; }
+.copy-button.is-copied,
+.copy-button.is-copied:hover {
+  background: var(--pink);
+  color: var(--ink);
+  opacity: 1;
+  transform: none;
+  box-shadow: 3px 3px 0 var(--ink);
+  cursor: default;
+}
 
 .loading-state,
 .empty-state,
@@ -348,14 +358,27 @@ kbd { padding: 3px 7px; border: 2px solid var(--ink); border-radius: 6px; backgr
 
 footer {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
   padding: 0 0 38px;
-  color: var(--muted);
   font: 11px Inter, system-ui, sans-serif;
 }
 
-footer p { margin: 0; }
+.discord-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: 2px solid var(--ink);
+  border-radius: 11px 11px 4px 11px;
+  background: var(--lavender);
+  box-shadow: 4px 4px 0 var(--ink);
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+.discord-link:hover { background: var(--cyan); transform: translateY(-2px); }
 
 .toast {
   position: fixed;
@@ -401,7 +424,6 @@ footer p { margin: 0; }
   .local-clock { min-width: 154px; padding: 7px 9px; }
   .clock-label, .local-clock .live-dot, .clock-stack small { display: none; }
   .status-ribbon { justify-content: space-between; gap: 7px; margin-top: 5px; padding: 11px 12px; box-shadow: 4px 4px 0 var(--ink); font-size: 8.5px; }
-  .status-ribbon span:nth-of-type(4), .status-ribbon i:nth-of-type(3) { display: none; }
   .browser-toolbar { padding: 11px; box-shadow: 4px 4px 0 var(--ink); }
   .tab { min-height: 53px; padding: 0 10px; font-size: 14px; }
   .tab > span:first-child { font-size: 19px; }
