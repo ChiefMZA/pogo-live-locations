@@ -42,11 +42,11 @@ function formatter(timeZone, kind) {
   const key = `${timeZone}:${kind}`;
   if (formatterCache.has(key)) return formatterCache.get(key);
   const options = kind === "clock"
-    ? { timeZone, hour: "2-digit", minute: "2-digit", second: "2-digit" }
+    ? { timeZone, hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true }
     : kind === "date"
       ? { timeZone, weekday: "short", day: "2-digit", month: "short", year: "numeric" }
       : { timeZone, timeZoneName: "short" };
-  const value = new Intl.DateTimeFormat(undefined, options);
+  const value = new Intl.DateTimeFormat(kind === "clock" ? "en-US" : undefined, options);
   formatterCache.set(key, value);
   return value;
 }
@@ -195,10 +195,11 @@ function render() {
 }
 
 function updateClocks(now = new Date(), allowRegroup = true) {
-  elements.localClock.textContent = now.toLocaleTimeString(undefined, {
+  elements.localClock.textContent = now.toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
+    hour12: true,
   });
 
   if (allowRegroup && state.offsetSignature) {
