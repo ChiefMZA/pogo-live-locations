@@ -588,6 +588,14 @@
       "countryCode": "NZ"
     },
     {
+      "id": "-18.147125,178.446441",
+      "name": "Suva, Fiji",
+      "latitude": -18.147125,
+      "longitude": 178.446441,
+      "timezone": "Pacific/Fiji",
+      "countryCode": "FJ"
+    },
+    {
       "id": "-22.266667,166.450000",
       "name": "Nouméa, New Caledonia",
       "latitude": -22.266667,
