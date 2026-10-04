@@ -14,6 +14,7 @@ const elements = {
   toast: document.querySelector("#toast"),
   localClock: document.querySelector("#local-clock"),
   localZone: document.querySelector("#local-zone"),
+  timezoneCount: document.querySelector('[data-count="timezones"]'),
   tabs: [...document.querySelectorAll("[data-tab]")],
 };
 
@@ -109,9 +110,9 @@ function visibleLocations() {
   );
 }
 
-function groupedLocations(date) {
+function groupedLocations(date, locations = visibleLocations()) {
   const groups = new Map();
-  for (const location of visibleLocations()) {
+  for (const location of locations) {
     let offset;
     try {
       offset = offsetMinutes(location.timezone, date);
@@ -195,6 +196,7 @@ function render() {
 }
 
 function updateClocks(now = new Date(), allowRegroup = true) {
+  elements.timezoneCount.textContent = groupedLocations(now, state.data.timezones).length;
   elements.localClock.textContent = now.toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
@@ -281,7 +283,7 @@ async function loadData() {
     }
     state.data = data;
     document.querySelector('[data-count="hotspots"]').textContent = data.hotspots.length;
-    document.querySelector('[data-count="timezones"]').textContent = data.timezones.length;
+    elements.timezoneCount.textContent = groupedLocations(new Date(), data.timezones).length;
     render();
   } catch (error) {
     console.error(error);
