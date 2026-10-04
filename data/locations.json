@@ -620,11 +620,27 @@
       "countryCode": "AU"
     },
     {
+      "id": "-27.468320,153.023840",
+      "name": "Brisbane, Australia",
+      "latitude": -27.46832,
+      "longitude": 153.02384,
+      "timezone": "Australia/Brisbane",
+      "countryCode": "AU"
+    },
+    {
       "id": "-34.927128,138.599852",
       "name": "Adelaide, Australia",
       "latitude": -34.927128,
       "longitude": 138.599852,
       "timezone": "Australia/Adelaide",
+      "countryCode": "AU"
+    },
+    {
+      "id": "-12.463752,130.843505",
+      "name": "Darwin City, Australia",
+      "latitude": -12.463752,
+      "longitude": 130.843505,
+      "timezone": "Australia/Darwin",
       "countryCode": "AU"
     },
     {
@@ -636,12 +652,52 @@
       "countryCode": "JP"
     },
     {
+      "id": "37.559350,126.980560",
+      "name": "Seoul, South Korea",
+      "latitude": 37.55935,
+      "longitude": 126.98056,
+      "timezone": "Asia/Seoul",
+      "countryCode": "KR"
+    },
+    {
       "id": "-31.675207,128.889177",
       "name": "Eucla, Australia",
       "latitude": -31.675207,
       "longitude": 128.889177,
       "timezone": "Australia/Eucla",
       "countryCode": "AU"
+    },
+    {
+      "id": "25.047772,121.516898",
+      "name": "Taipei, Taiwan",
+      "latitude": 25.047772,
+      "longitude": 121.516898,
+      "timezone": "Asia/Taipei",
+      "countryCode": "TW"
+    },
+    {
+      "id": "-31.959581,115.842826",
+      "name": "Perth, Australia",
+      "latitude": -31.959581,
+      "longitude": 115.842826,
+      "timezone": "Australia/Perth",
+      "countryCode": "AU"
+    },
+    {
+      "id": "14.601026,120.975135",
+      "name": "Manila, Philippines",
+      "latitude": 14.601026,
+      "longitude": 120.975135,
+      "timezone": "Asia/Manila",
+      "countryCode": "PH"
+    },
+    {
+      "id": "3.155749,101.694900",
+      "name": "Kuala Lumpur, Malaysia",
+      "latitude": 3.155749,
+      "longitude": 101.6949,
+      "timezone": "Asia/Kuala_Lumpur",
+      "countryCode": "MY"
     },
     {
       "id": "1.282829,103.864647",
@@ -658,6 +714,22 @@
       "longitude": 105.853734,
       "timezone": "Asia/Ho_Chi_Minh",
       "countryCode": "VN"
+    },
+    {
+      "id": "13.845247,100.569320",
+      "name": "Bangkok, Thailand",
+      "latitude": 13.845247,
+      "longitude": 100.56932,
+      "timezone": "Asia/Bangkok",
+      "countryCode": "TH"
+    },
+    {
+      "id": "-6.224168,106.823074",
+      "name": "Jakarta, Indonesia",
+      "latitude": -6.224168,
+      "longitude": 106.823074,
+      "timezone": "Asia/Jakarta",
+      "countryCode": "ID"
     },
     {
       "id": "16.777900,96.148178",
@@ -700,6 +772,14 @@
       "countryCode": "PK"
     },
     {
+      "id": "4.175352,73.509330",
+      "name": "Malé, Maldives",
+      "latitude": 4.175352,
+      "longitude": 73.50933,
+      "timezone": "Indian/Maldives",
+      "countryCode": "MV"
+    },
+    {
       "id": "34.528130,69.172330",
       "name": "Kabul, Afghanistan",
       "latitude": 34.52813,
@@ -732,6 +812,38 @@
       "countryCode": "TR"
     },
     {
+      "id": "-1.275971,36.817481",
+      "name": "Nairobi, Kenya",
+      "latitude": -1.275971,
+      "longitude": 36.817481,
+      "timezone": "Africa/Nairobi",
+      "countryCode": "KE"
+    },
+    {
+      "id": "39.641190,22.412780",
+      "name": "Larissa, Greece",
+      "latitude": 39.64119,
+      "longitude": 22.41278,
+      "timezone": "Europe/Athens",
+      "countryCode": "GR"
+    },
+    {
+      "id": "30.042758,31.200077",
+      "name": "Cairo, Egypt",
+      "latitude": 30.042758,
+      "longitude": 31.200077,
+      "timezone": "Africa/Cairo",
+      "countryCode": "EG"
+    },
+    {
+      "id": "-33.918781,18.426647",
+      "name": "Cape Town, South Africa",
+      "latitude": -33.918781,
+      "longitude": 18.426647,
+      "timezone": "Africa/Johannesburg",
+      "countryCode": "ZA"
+    },
+    {
       "id": "48.863675,2.326695",
       "name": "Paris, France",
       "latitude": 48.863675,
@@ -740,12 +852,44 @@
       "countryCode": "FR"
     },
     {
+      "id": "41.661924,-0.901100",
+      "name": "Zaragoza, Spain",
+      "latitude": 41.661924,
+      "longitude": -0.9011,
+      "timezone": "Europe/Madrid",
+      "countryCode": "ES"
+    },
+    {
+      "id": "41.893348,12.483730",
+      "name": "Rome, Italy",
+      "latitude": 41.893348,
+      "longitude": 12.48373,
+      "timezone": "Europe/Rome",
+      "countryCode": "IT"
+    },
+    {
+      "id": "6.450000,3.400000",
+      "name": "Lagos, Nigeria",
+      "latitude": 6.45,
+      "longitude": 3.4,
+      "timezone": "Africa/Lagos",
+      "countryCode": "NG"
+    },
+    {
       "id": "51.513302,-0.125298",
       "name": "London, United Kingdom",
       "latitude": 51.513302,
       "longitude": -0.125298,
       "timezone": "Europe/London",
       "countryCode": "GB"
+    },
+    {
+      "id": "64.140495,-21.949008",
+      "name": "Reykjavík, Iceland",
+      "latitude": 64.140495,
+      "longitude": -21.949008,
+      "timezone": "Atlantic/Reykjavik",
+      "countryCode": "IS"
     },
     {
       "id": "37.739333,-25.677710",
@@ -772,6 +916,14 @@
       "countryCode": "GS"
     },
     {
+      "id": "-3.845939,-32.411685",
+      "name": "Fernando de Noronha, Brazil",
+      "latitude": -3.845939,
+      "longitude": -32.411685,
+      "timezone": "America/Noronha",
+      "countryCode": "BR"
+    },
+    {
       "id": "47.561453,-52.711850",
       "name": "St. John's, Canada",
       "latitude": 47.561453,
@@ -788,12 +940,44 @@
       "countryCode": "BR"
     },
     {
+      "id": "44.643192,-63.575477",
+      "name": "Halifax, Canada",
+      "latitude": 44.643192,
+      "longitude": -63.575477,
+      "timezone": "America/Halifax",
+      "countryCode": "CA"
+    },
+    {
+      "id": "18.466667,-69.900000",
+      "name": "Santo Domingo, Dominican Republic",
+      "latitude": 18.466667,
+      "longitude": -69.9,
+      "timezone": "America/Santo_Domingo",
+      "countryCode": "DO"
+    },
+    {
       "id": "40.754214,-73.984487",
       "name": "New York City, United States",
       "latitude": 40.754214,
       "longitude": -73.984487,
       "timezone": "America/New_York",
       "countryCode": "US"
+    },
+    {
+      "id": "46.817008,-71.213462",
+      "name": "Quebec, Canada",
+      "latitude": 46.817008,
+      "longitude": -71.213462,
+      "timezone": "America/Toronto",
+      "countryCode": "CA"
+    },
+    {
+      "id": "-12.050000,-77.050000",
+      "name": "Lima, Peru",
+      "latitude": -12.05,
+      "longitude": -77.05,
+      "timezone": "America/Lima",
+      "countryCode": "PE"
     },
     {
       "id": "41.920204,-87.634251",
@@ -804,11 +988,35 @@
       "countryCode": "US"
     },
     {
+      "id": "19.435171,-99.145965",
+      "name": "Mexico City, Mexico",
+      "latitude": 19.435171,
+      "longitude": -99.145965,
+      "timezone": "America/Mexico_City",
+      "countryCode": "MX"
+    },
+    {
       "id": "39.739212,-104.990303",
       "name": "Denver, United States",
       "latitude": 39.739212,
       "longitude": -104.990303,
       "timezone": "America/Denver",
+      "countryCode": "US"
+    },
+    {
+      "id": "53.543201,-113.489692",
+      "name": "Edmonton, Canada",
+      "latitude": 53.543201,
+      "longitude": -113.489692,
+      "timezone": "America/Edmonton",
+      "countryCode": "CA"
+    },
+    {
+      "id": "33.448333,-112.073333",
+      "name": "Phoenix, United States",
+      "latitude": 33.448333,
+      "longitude": -112.073333,
+      "timezone": "America/Phoenix",
       "countryCode": "US"
     },
     {
@@ -820,12 +1028,36 @@
       "countryCode": "US"
     },
     {
+      "id": "-25.066667,-130.083333",
+      "name": "Adamstown, Pitcairn Islands",
+      "latitude": -25.066667,
+      "longitude": -130.083333,
+      "timezone": "Pacific/Pitcairn",
+      "countryCode": "PN"
+    },
+    {
       "id": "61.216591,-149.895516",
       "name": "Anchorage, United States",
       "latitude": 61.216591,
       "longitude": -149.895516,
       "timezone": "America/Anchorage",
       "countryCode": "US"
+    },
+    {
+      "id": "58.301731,-134.412506",
+      "name": "Juneau, United States",
+      "latitude": 58.301731,
+      "longitude": -134.412506,
+      "timezone": "America/Juneau",
+      "countryCode": "US"
+    },
+    {
+      "id": "-23.133333,-134.950000",
+      "name": "Gambier Islands, French Polynesia",
+      "latitude": -23.133333,
+      "longitude": -134.95,
+      "timezone": "Pacific/Gambier",
+      "countryCode": "PF"
     },
     {
       "id": "51.868564,-176.639276",
